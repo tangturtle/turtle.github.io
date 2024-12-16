@@ -373,13 +373,13 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://apiv3.shanbay.com/weapps/dailyquote/quote',
+          url: 'https://v1.hitokoto.cn/',
           headers: {},
           dataType: 'json',
           success: function(result) {
             var apiText;
             if (result) {
-              var keys = 'translation'.split(',');
+              var keys = 'hitokoto'.split(',');
               if (result instanceof Array) {
                 result = result[0];
               }
@@ -397,7 +397,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://apiv3.shanbay.com/weapps/dailyquote/quote:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
             }
             typing(text);
           }
