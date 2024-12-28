@@ -26,14 +26,14 @@
 <meta property="og:url" content="http://tangturtle.github.io/2024/12/19/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://tangturtle.github.io/.%5C%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png">
-<meta property="og:image" content="http://tangturtle.github.io/.%5C%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%A1%AC%E9%93%BE%E6%8E%A5.png">
+<meta property="og:image" content="http://tangturtle.github.io/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png">
+<meta property="og:image" content="http://tangturtle.github.io/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%A1%AC%E9%93%BE%E6%8E%A5.png">
 <meta property="article:published_time" content="2024-12-19T13:59:24.000Z">
 <meta property="article:modified_time" content="2024-12-19T13:59:24.000Z">
 <meta property="article:author" content="Tang Turtle">
 <meta property="article:tag" content="常用命令">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://tangturtle.github.io/.%5C%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png">
+<meta name="twitter:image" content="http://tangturtle.github.io/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -294,8 +294,8 @@
 </ul>
 <p>它们有什么区别呢？</p>
 <ol>
-<li>符号链接是将自己链接到一个目标文件或目录的路径上。当系统识别到符号链接时，它会跳转到符号链接所指向的目标中去，而不改变此时的文件路径。<br><img src="/.%5C%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png" srcset="/img/loading.gif" lazyload><br>符号链接从Vista开始得到支持，NTFS内置机制。适用于文件，目录。可以理解为另一种形式的快捷方式(shortcut)，文件大小为0字节和不占用空间。可以使用相对/绝对路径，可以跨盘符，跨主机，可以使用UNC路径和网络驱动器。</li>
-<li>硬链接和符号链接的原理完全不同，符号链接是指向目标路径的链接，而硬链接则是指向目标数据对象的链接。因为一个卷中的数据对象都有一个独一无二文件 ID，也可以说硬链接是指向目标文件 ID 的链接。<br><img src="/.%5C%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%A1%AC%E9%93%BE%E6%8E%A5.png" srcset="/img/loading.gif" lazyload><br>硬链接从Windows NT4开始得到支持，是NTFS内置机制，FAT32不支持。只适用于文件，只能使用绝对路径。本身无文件，不占用额外空间。hardlink与targetfile必须位于同一卷，可以简单理解成不能跨盘符。</li>
+<li>符号链接是将自己链接到一个目标文件或目录的路径上。当系统识别到符号链接时，它会跳转到符号链接所指向的目标中去，而不改变此时的文件路径。<br><img src="/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5.png" srcset="/img/loading.gif" lazyload><br>符号链接从Vista开始得到支持，NTFS内置机制。适用于文件，目录。可以理解为另一种形式的快捷方式(shortcut)，文件大小为0字节和不占用空间。可以使用相对/绝对路径，可以跨盘符，跨主机，可以使用UNC路径和网络驱动器。</li>
+<li>硬链接和符号链接的原理完全不同，符号链接是指向目标路径的链接，而硬链接则是指向目标数据对象的链接。因为一个卷中的数据对象都有一个独一无二文件 ID，也可以说硬链接是指向目标文件 ID 的链接。<br><img src="/%E6%96%87%E4%BB%B6-%E5%A4%B9-%E9%93%BE%E6%8E%A5%5C%E7%A1%AC%E9%93%BE%E6%8E%A5.png" srcset="/img/loading.gif" lazyload><br>硬链接从Windows NT4开始得到支持，是NTFS内置机制，FAT32不支持。只适用于文件，只能使用绝对路径。本身无文件，不占用额外空间。hardlink与targetfile必须位于同一卷，可以简单理解成不能跨盘符。</li>
 <li>目录链接通过<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/win32/fileio/reparse-points">重分析点</a>实现。<br>目录联接从Windows2000/XP开始得到支持，是NTFS内置机制。只适用于目录。只能使用绝对路径。目录链接通过重分析点实现，目录链接可以跨卷，但是不能跨主机。</li>
 </ol>
 <h3 id="具体实现命令"><a href="#具体实现命令" class="headerlink" title="具体实现命令"></a>具体实现命令</h3><ol>
