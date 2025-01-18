@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://tangturtle.github.io/sitemap.xml
-C
