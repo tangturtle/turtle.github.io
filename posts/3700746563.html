@@ -330,14 +330,14 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Hexo-的图片上传与本地预览"><a href="#Hexo-的图片上传与本地预览" class="headerlink" title="Hexo 的图片上传与本地预览"></a>Hexo 的图片上传与本地预览</h1><h2 id="方案一-不推荐"><a href="#方案一-不推荐" class="headerlink" title="方案一 (不推荐)"></a>方案一 (不推荐)</h2><h4 id="全局资源文件夹"><a href="#全局资源文件夹" class="headerlink" title="全局资源文件夹"></a>全局资源文件夹</h4><p>即，将所有文章的资源统一用一个全局资源文件夹管理。</p>
+                <h1 id="Hexo-的图片上传与本地预览"><a href="#Hexo-的图片上传与本地预览" class="headerlink" title="Hexo 的图片上传与本地预览"></a>Hexo 的图片上传与本地预览</h1><h3 id="方案一-不推荐"><a href="#方案一-不推荐" class="headerlink" title="方案一 (不推荐)"></a>方案一 (不推荐)</h3><h4 id="全局资源文件夹"><a href="#全局资源文件夹" class="headerlink" title="全局资源文件夹"></a>全局资源文件夹</h4><p>即，将所有文章的资源统一用一个全局资源文件夹管理。</p>
 <p>此方法的优点是比较简便，并且当多篇文章需要引用同一资源时，也比较方便。缺点是当文章很多时，各个文章的图片都在同一文件夹，不便管理。</p>
 <h4 id="具体方法："><a href="#具体方法：" class="headerlink" title="具体方法："></a>具体方法：</h4><p>在 hexo 文件夹下的 source 目录下，新建一个文件夹叫 images(名字随意)，将要插入的图片放在该文件夹中。</p>
 <p>在 md 文档内，使用 <code>![图片](图片链接地址 &quot;图片title&quot;)</code>的格式，圆括号内的链接地址写(&#x2F;images&#x2F;name.jpeg)。</p>
 <p>这里的 &#x2F; 指的是根目录，对于 hexo，资源文件的根目录就是 source。</p>
 <p>例如，在 md 文档中写：<code>![图片](/images/20.jpeg &quot;甘雨&quot;)</code><br>同时将“20.jpeg”这个图片文件放在 hexo 文件夹&#x2F;source&#x2F;images 下，则图片可以上传到博客。</p>
 <p>(方案一摘自<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/2301_77285173/article/details/130189857">在 hexo 博客中插入图片的方法</a>)</p>
-<h2 id="方案二-推荐"><a href="#方案二-推荐" class="headerlink" title="方案二 (推荐)"></a>方案二 (推荐)</h2><h4 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h4><p>对每一篇文章使用一个文件夹管理</p>
+<h3 id="方案二-推荐"><a href="#方案二-推荐" class="headerlink" title="方案二 (推荐)"></a>方案二 (推荐)</h3><h4 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h4><p>对每一篇文章使用一个文件夹管理</p>
 <h4 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h4><ol>
 <li><p>修改 <code>_config.yml</code>文件</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 约第43行</span><br><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
