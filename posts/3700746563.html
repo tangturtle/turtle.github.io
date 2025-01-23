@@ -268,7 +268,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          599 字
+          654 字
         
       </span>
     
@@ -279,7 +279,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -350,8 +350,10 @@
 <h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>方案二在本地预览 <code>.md</code>文件时，由于 <code>&#123;% asset_img image.jpg 这是一张图片 %&#125;</code>并非 markdown 语法，会导致本地无法正常预览解析，可以使用<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>插件。</p>
 <p>该插件允许用户在本地编辑 <code>.md</code>文件时使用 <code>![name](图片名称)</code>这一 markdown 语法以便本地预览，并在 <code>hexo g</code>时自动生成正确的链接</p>
 <p>然而我们可以发现还是无法本地预览，因为图片和 <code>.md</code>文件本身不在同一级目录，所以我们还要对插件进行修改</p>
-<h5 id="修改-hexo-renderer-marked"><a href="#修改-hexo-renderer-marked" class="headerlink" title="修改 hexo-renderer-marked"></a>修改 <code>hexo-renderer-marked</code></h5><p>对 <code>\node_modules\hexo-renderer-marked\lib\renderer.js</code> 进行修改</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//约第118行</span><br><br><span class="hljs-comment">// Prepend root to image path</span><br><span class="hljs-title function_">image</span>(<span class="hljs-params">href, title, text</span>) &#123;<br>    <span class="hljs-comment">// 从这里添加3行</span><br>    <span class="hljs-keyword">if</span> (href.<span class="hljs-title function_">indexOf</span>(<span class="hljs-string">&quot;\\&quot;</span>) &gt; -<span class="hljs-number">1</span>) &#123;<br>        href = href.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;\\&quot;</span>)[<span class="hljs-number">2</span>];<br>    &#125;<br><br>    <span class="hljs-comment">//...</span><br>    <span class="hljs-comment">//文件其他内容</span><br>    <span class="hljs-comment">//...</span><br>&#125;<br></code></pre></td></tr></table></figure>
+<h5 id="修改-hexo-renderer-marked"><a href="#修改-hexo-renderer-marked" class="headerlink" title="修改 hexo-renderer-marked"></a>修改 <code>hexo-renderer-marked</code></h5><p>由于我使用的是vscode的typora插件，设置粘贴图片创建地址为 <code>$&#123;fileName&#125;\$&#123;now&#125;.png</code><br>即.md文件同级目录下 <code>fileName</code>文件夹内<br>文件结构：</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">--|<span class="hljs-string"></span><br><span class="hljs-string">  </span>|<span class="hljs-string">---filename-</span>|<span class="hljs-string">---time.jpg</span><br><span class="hljs-string">  </span>|<span class="hljs-string">            </span>|<span class="hljs-string">---time1.jpg</span><br><span class="hljs-string">  </span>|<br>  |<span class="hljs-string">---filename.md</span><br></code></pre></td></tr></table></figure>
+<p>所以对 <code>\node_modules\hexo-renderer-marked\lib\renderer.js</code> 进行修改</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//约第118行</span><br><br><span class="hljs-comment">// Prepend root to image path</span><br><span class="hljs-title function_">image</span>(<span class="hljs-params">href, title, text</span>) &#123;<br>    <span class="hljs-comment">// 从这里添加3行</span><br>    <span class="hljs-keyword">if</span> (href.<span class="hljs-title function_">indexOf</span>(<span class="hljs-string">&quot;\\&quot;</span>) &gt; -<span class="hljs-number">1</span>) &#123;<br>        href = href.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;\\&quot;</span>)[<span class="hljs-number">1</span>];<br>    &#125;<br><br>    <span class="hljs-comment">//...</span><br>    <span class="hljs-comment">//文件其他内容</span><br>    <span class="hljs-comment">//...</span><br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>搞定，现在可以快乐的写博客了</p>
 
