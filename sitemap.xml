@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tangturtle.github.io/posts/2290109682.html</loc>
+    <loc>https://tangturtle.github.io/posts/2290109682.html</loc>
     
     <lastmod>2025-01-21</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/about/index.html</loc>
+    <loc>https://tangturtle.github.io/about/index.html</loc>
     
     <lastmod>2024-12-28</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/posts/3700746563.html</loc>
+    <loc>https://tangturtle.github.io/posts/3700746563.html</loc>
     
     <lastmod>2024-12-28</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/posts/1705464100.html</loc>
+    <loc>https://tangturtle.github.io/posts/1705464100.html</loc>
     
     <lastmod>2024-12-19</lastmod>
     
@@ -39,7 +39,7 @@
   
 
   <url>
-    <loc>http://tangturtle.github.io/</loc>
+    <loc>https://tangturtle.github.io/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -47,42 +47,42 @@
 
   
   <url>
-    <loc>http://tangturtle.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>https://tangturtle.github.io/tags/Hexo/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/tags/Hyper-V/</loc>
+    <loc>https://tangturtle.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/tags/Arch/</loc>
+    <loc>https://tangturtle.github.io/tags/Hyper-V/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/tags/Hexo/</loc>
+    <loc>https://tangturtle.github.io/tags/Arch/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/tags/Windows/</loc>
+    <loc>https://tangturtle.github.io/tags/Windows/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/tags/%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://tangturtle.github.io/tags/%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -91,21 +91,21 @@
 
   
   <url>
-    <loc>http://tangturtle.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>https://tangturtle.github.io/categories/Hexo%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/categories/Hexo%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>https://tangturtle.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tangturtle.github.io/categories/Windows/</loc>
+    <loc>https://tangturtle.github.io/categories/Windows/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
